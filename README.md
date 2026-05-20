@@ -53,4 +53,4 @@ Then open:
 http://localhost:8080
 ```
 
-The manual override input still works if you drag or choose a workbook locally.
+There is no manual override input in the GitHub build. To update the public data, replace `data/season-results.xlsx` in the repository and redeploy/push.

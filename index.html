@@ -4,33 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Driver Points and Insights | OPULENT HARDWARE</title>
-  <link rel="stylesheet" href="assets/style.css?v=driver-points-insights-github-001" />
+  <link rel="stylesheet" href="assets/style.css?v=driver-points-insights-github-002" />
 </head>
 <body>
   <div class="container">
     <header>
       <h1 class="brand-logo">DRIVER POINTS</h1>
       <div class="sub-title">POINTS BY CLASS · DRIVER INSIGHTS · POWERED BY OPULENT HARDWARE</div>
-
-      <section class="upload-card" aria-labelledby="uploadTitle">
-        <div class="upload-copy">
-          <h2 id="uploadTitle">GitHub Workbook Source</h2>
-          <p>
-            This GitHub Pages version auto-loads <strong>data/season-results.xlsx</strong> from the repository. You can still choose a local .xlsx file for testing or overrides.
-          </p>
-        </div>
-        <div class="ingest-actions">
-          <label class="file-picker">
-            <input id="fileInput" type="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
-            <span>OVERRIDE EXCEL</span>
-          </label>
-        </div>
-      </section>
-
       <div class="event-meta">
         <div class="meta-pill"><span class="meta-copy"><span class="meta-label">WORKBOOK</span><span id="eventTitle" class="meta-value">No data loaded</span></span></div>
         <div class="meta-pill"><span class="meta-copy"><span class="meta-label">ROUNDS</span><span id="roundCount" class="meta-value">—</span></span></div>
-        <div class="meta-pill"><span class="meta-copy"><span class="meta-label">SELECTED</span><span id="selectedCount" class="meta-value">—</span></span></div>
         <div class="meta-pill"><span class="meta-copy"><span class="meta-label">DRIVERS</span><span id="participantCount" class="meta-value">—</span></span></div>
       </div>
 
@@ -48,13 +31,7 @@
         </div>
         <div id="roundSelector" class="round-selector"></div>
       </div>
-
-      <div class="local-help">
-        GitHub Pages auto-loads data/season-results.xlsx. Spreadsheet parsing still happens locally in the browser.
-      </div>
     </header>
-
-    <div id="dropZone" class="drop-zone">Auto-loading data/season-results.xlsx from the repository. Drag a workbook here only if you want to test a local override.</div>
     <div id="status" class="status-card">Loading data/season-results.xlsx from the repository...</div>
 
     <main id="rankings"></main>
@@ -62,7 +39,7 @@
     <footer>
       <div class="footer-kicker">Unofficial Local Results Visualization</div>
       <div class="disclaimer">
-        Unofficial visual treatment of SFR Solo competition results. Driver times, class results, PAX results, run histories, reruns, and penalties are rendered from the selected Excel workbook. For official results, final awards, penalties, reruns, and scoring corrections, reference the source sheet and confirm with SFR SCCA.
+        Unofficial visual treatment of SFR Solo competition results. Driver times, class results, PAX results, run histories, reruns, and penalties are rendered from the repository Excel workbook. For official results, final awards, penalties, reruns, and scoring corrections, reference the source sheet and confirm with SFR SCCA.
       </div>
       <div class="footer-links">
         <a class="footer-link" href="https://www.instagram.com/opulenthardware" target="_blank" rel="noopener">INSTAGRAM / @OPULENTHARDWARE</a>
@@ -77,6 +54,6 @@
     <button class="close-btn" onclick="toggleDiag()" type="button">CLOSE PANEL</button>
   </aside>
 
-  <script src="assets/app.js?v=driver-points-insights-github-001"></script>
+  <script src="assets/app.js?v=driver-points-insights-github-002"></script>
 </body>
 </html>
